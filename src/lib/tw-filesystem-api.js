@@ -21,8 +21,7 @@ const showSaveFilePicker = fileName => window.showSaveFilePicker({
 const showOpenFilePicker = async () => {
     const [handle] = await window.showOpenFilePicker({
         multiple: false,
-        ...(isMobile() ? {} : {
-            types: [
+        types: [
                 {
                     description: 'Supported Files',
                     accept: {
